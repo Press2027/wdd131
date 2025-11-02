@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Preston Machanga | Personal homepage and coursework" />
+    <meta name="author" content="Preston Machanga" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Preston Machanga</title>
+    
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a></li>
+                <li><a href="project.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Preston Machanga</h1>
+
+        <div class="main-layout-grid">
+            <section class="card about-me-card">
+                <h2>About Me</h2>
+                <div class="profile-content">
+                    <div class="image-content">
+                        <img src="images/profile.png" alt="Preston Machanga - Web Developer" loading="lazy" width="150" height="150"> </div>
+                    <div class="text-content">
+                        <p>
+                            Hello! My name is Preston Machanga. I was born in Kenya and now live in South Sudan. 
+                            I currently work as an assistant doctor at Greenworld Medical Centre. 
+                            I’m married to a beautiful wife, and we have three sons. 
+                            I’m also studying to become a web developer, passionate about writing clean code and creating user-friendly websites.
+                        </p>
+                    </div>
+                </div>
+                
+                <section class="country-info">
+                    <h3>About Kenya</h3>
+                    <div class="country-content">
+                        <div class="flag-container">
+                            <img src="images/kenyanflag.jpeg" alt="Flag of Kenya" class="flag" width="100" height="70"> <p class="flag-caption">National Flag of Kenya</p>
+                        </div>
+                        <div class="text-description">
+                            <p>
+                                Kenya is a beautiful country in East Africa. It is also stable East Africa economically. 
+                                It’s famous for its rich biodiversity, unique wildlife, and stunning natural beauty. 
+                                The capital city is Nairobi, and the official languages are English and Kiswahili.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="card current-projects-card">
+                <h2>Current Projects</h2>
+                <p>
+                    This semester, I’m focusing on mastering <strong>Dynamic Web Fundamentals</strong> using JavaScript. 
+                    I’m also building a personal project — a <strong>Hospital Management System</strong> — 
+                    where I can apply these concepts to create real-world, interactive web applications.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Preston Machanga | South Sudan
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

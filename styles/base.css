@@ -1,0 +1,226 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- 1. Variables and Global Styles --- */
+
+:root {
+  --primary-color: #003366; /* Deep Blue/Navy */
+  --accent-color: #ffcc00;  /* Gold/Yellow */
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box; /* Crucial for layout predictability */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6; 
+}
+
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #222; 
+  padding: 0.75rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+
+
+main {
+  max-width: 960px; 
+  margin: 2rem auto;
+  padding: 0 var(--spacing);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+
+.main-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+
+.card h2 {
+    color: white;
+    background-color: var(--primary-color); 
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem; 
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+
+.about-me-card .profile-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    align-items:center; 
+    margin-bottom: 1.5rem;
+}
+
+
+.about-me-card .image-content {
+    Flex-shrink: 0; 
+}
+
+.about-me-card .image-content img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid var(--accent-color); 
+    display: block; 
+}
+
+.about-me-card .text-content {
+    text-align: center; 
+}
+
+
+.country-info {
+    border-top: 1px solid #ccc;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.country-info h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.country-info .country-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    align-items: center; 
+}
+
+.flag-container {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.flag-container .flag {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.flag-caption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.country-info .text-description {
+    text-align: center; /* Center text when stacked */
+}
+
+
+
+.current-projects-card p {
+    
+}
+
+@media (min-width: 768px) {
+    .main-layout-grid {
+        grid-template-columns: 2fr 1fr; 
+
+    
+    .about-me-card .profile-content {
+        flex-direction: row; 
+        text-align: left;
+        align-items: flex-start; 
+    }
+
+    .about-me-card .text-content {
+        text-align: left; 
+    }
+
+    
+    .country-info .country-content {
+        flex-direction: row; 
+        text-align: left;
+        align-items: flex-start; 
+    }
+
+    .country-info .text-description {
+        text-align: left; 
+    }
+}
+
+
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+}
