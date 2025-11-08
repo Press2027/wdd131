@@ -7,7 +7,7 @@ hamButton.addEventListener('click', () => {
     hamButton.textContent = navigation.classList.contains('open') ? 'X' : '☰';
 });
 
-// Set initial hamburger icon
+// Set initial hamburger icon.
 hamButton.textContent = '☰';
 
 // Footer Dynamic Year and Last Modified

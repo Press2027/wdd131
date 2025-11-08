@@ -25,7 +25,7 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 3x3 temple grid for large screens */
+/*temple grid for large screens*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
