@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS: mobile first -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" imedia="(min-wdth: 700px)" />
+    
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home Page">Home</a></li>
+                <li><a href="#" title="Old Temples">Old</a></li>
+                <li><a href="#" title="New Temples">New</a></li>
+                <li><a href="#" title="Large Temples">Large</a></li>
+                <li><a href="#" title="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/Salt_lake_temple.jpeg" alt="Salt Lake Temple" loading="lazy" width="400" height="250">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rome_Ialy_Temple.jpeg" alt="Rome Temple" loading="lazy" width="400" height="250">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Provo_Utah.jpeg" alt="Provo City Center" loading="lazy" width="400" height="250">
+                <figcaption>Provo City Center</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Manti.jpeg" alt="Manti Temple" loading="lazy" width="400" height="250">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/San_Diago.jpeg" alt="San Diego Temple" loading="lazy" width="400" height="250">
+                <figcaption>San Diego Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ST_George_ temple.jpeg" alt="St George Temple" loading="lazy" width="400" height="250">
+                <figcaption>St George Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Utah_temple.jpeg" alt="Utah Temple" loading="lazy" width="400" height="250">
+                <figcaption>Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ogaden_Temple.jpeg" alt="Ogaden Temple" loading="lazy" width="400" height="250">
+                <figcaption>Ogaden Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/West_Jordan_temple.jpeg" alt="West Jordan Temple" loading="lazy" width="400" height="250">
+                <figcaption>West Jordan Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Preston Machanga | Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
