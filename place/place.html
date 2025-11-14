@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Info Card</title>
+    <link rel="stylesheet" href="place.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card-container">
+
+        <header>
+            <h1>Kenya</h1>
+        </header>
+
+        <main class="content-area">
+
+            <div class="background-image">
+
+                <!-- RESPONSIVE IMAGE WITH SRCSET (WebP) -->
+                <picture class="hero-image">
+                    <source srcset="images/hero_large.webp" media="(min-width: 900px)" type="image/webp">
+                    <source srcset="images/hero_medium.webp" media="(min-width: 600px)" type="image/webp">
+                    <img src="images/hero_small.webp" alt="Landscape of Kenya">
+                </picture>
+
+                <!-- DATA BOX -->
+                <div class="info-box data-box">
+                    <h2>Data</h2>
+                    <div class="data-row">
+                        <span>Area:</span> <span>580,370 km²</span>
+                    </div>
+                    <p id="population-data"><strong>Population:</strong> Loading...</p>
+                    <p><strong>Capital:</strong> Nairobi</p>
+                    <p><strong>Languages:</strong> English, Kiswahili</p>
+                    <p><strong>Currency:</strong> Kenyan shilling</p>
+                    <p><strong>Time Zone:</strong> UTC+3</p>
+                    <p><strong>Calling Code:</strong> +254</p>
+                    <p id="tld-data"><strong>Internet TLD:</strong> Loading...</p>
+                </div>
+
+                <!-- WEATHER BOX -->
+                <div class="info-box weather-box">
+                    <h2>Weather ☀️</h2>
+                    <div class="weather-row">
+                        <strong>Temperature:</strong> <span id="current-temp">--</span>
+                    </div>
+                    <div class="weather-row">
+                        <strong>Conditions:</strong> <span id="weather-condition">Loading...</span>
+                    </div>
+                    <div class="weather-row">
+                        <strong>Wind:</strong> <span id="wind-speed">--</span>
+                    </div>
+                    <div class="weather-row">
+                        <strong>Humidity:</strong> <span id="humidity">--</span>
+                    </div>
+                </div>
+
+            </div> <!-- end background-image -->
+
+        </main>
+
+        <footer class="card-footer">
+            ©2024 Preston R.W. Machanga ⭐ Kenya <br>
+            Last Modification: <span id="last-modified"></span>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

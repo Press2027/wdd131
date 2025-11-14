@@ -1,0 +1,143 @@
+/* -------------------------------
+   GLOBAL STYLING
+--------------------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f3f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Card Container */
+.card-container {
+    width: 95%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #d61f1f;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* -------------------------------
+   MAIN CONTENT AREA
+--------------------------------*/
+.content-area {
+    position: relative;
+    padding: 0;
+}
+
+/* Background Image Area */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.background-image .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover entire background */
+    display: block;
+}
+
+/* Boxes appear above background */
+.info-box {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+/* DATA BOX */
+.data-box {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    background: rgba(152, 163, 186, 0.75);
+}
+
+.data-box h2 {
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+}
+
+.data-box .data-row span:first-child,
+.data-box p strong {
+    color: #ffd700; /* golden labels */
+}
+
+/* WEATHER BOX */
+.weather-box {
+    bottom: 310px;
+    right: 0px;
+    width: 300px;
+    background: rgba(206, 198, 191, 0.75);
+}
+
+.weather-box h2 {
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+}
+
+.weather-box .weather-row strong {
+    color: #ffd700; /* golden labels */
+}
+
+/* Hover Effect for Both Boxes */
+.info-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* -------------------------------
+   FOOTER
+--------------------------------*/
+.card-footer {
+    text-align: center;
+    padding: 15px;
+    background: #e71a1a;
+    color: #2a2751;
+    font-size: 0.9rem;
+}
+
+/* -------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 900px) {
+    .data-box,
+    .weather-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    .data-box,
+    .weather-box {
+        position: static;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .background-image {
+        height: auto;
+    }
+}
