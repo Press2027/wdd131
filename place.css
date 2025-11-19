@@ -96,6 +96,10 @@ header h1 {
 }
 
 .weather-box h2 {
+    /* Ensures the icon/emoji can be aligned */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
     border-bottom: 2px solid rgba(255,255,255,0.6);
 }
 
@@ -108,6 +112,23 @@ header h1 {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
+
+/* -------------------------------
+   WEATHER ICON CONTROL - DEFAULT (DESKTOP)
+--------------------------------*/
+.weather-svg-icon {
+    /* Hide the SVG by default (desktop view) */
+    display: none;
+    height: 30px; 
+    width: 30px;
+}
+
+.weather-emoji {
+    /* Show the text emoji by default (desktop view) */
+    display: inline-block;
+    font-size: 1.5em; 
+}
+
 
 /* -------------------------------
    FOOTER
@@ -133,11 +154,20 @@ header h1 {
 @media (max-width: 700px) {
     .data-box,
     .weather-box {
-        position: static;
+        position: static; /* Stack them vertically */
         width: 90%;
         margin: 10px auto;
     }
     .background-image {
         height: auto;
+    }
+
+    /* MOBILE ICON SWITCH */
+    .weather-emoji {
+        display: none; /* Hide the emoji on mobile */
+    }
+
+    .weather-svg-icon {
+        display: inline-block; /* Show the SVG on mobile */
     }
 }
