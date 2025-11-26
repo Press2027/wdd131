@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f7;
+    margin: 0;
+}
+
+header {
+    background: #004B8D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #004B8D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.review-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.features label {
+    display: block;
+    padding: 3px 0;
+}
+
+.rating label {
+    display: block;
+    margin: 3px 0;
+    color: #E49B0F;
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    background: #00A86B;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    background: #008F5A;
+}
+
+.confirmation {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+}

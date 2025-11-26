@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        // Review counter
+        window.onload = function() {
+            let count = Number(localStorage.getItem("reviewCounter")) || 0;
+            count++;
+            localStorage.setItem("reviewCounter", count);
+
+            document.getElementById("counter").innerText = count;
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Review Submitted</h1>
+</header>
+
+<main class="confirmation">
+    <h2>Thank you for your review!</h2>
+    <p>This page has been successfully loaded.</p>
+    <p><strong>Total Reviews Submitted:</strong> <span id="counter">0</span></p>
+
+    <a href="form.html" class="submit-btn">Submit Another Review</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 | Product Review Form Assignment</p>
+</footer>
+
+</body>
+</html>

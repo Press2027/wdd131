@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="products.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Product Review Form</h1>
+</header>
+
+<main>
+    <form method="get" action="review.html" class="review-form">
+
+        <!-- Product Name -->
+        <label for="productName">Product Name *</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Rating -->
+        <label>Overall Rating *</label>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5">★★★★★</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★★★★☆</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★★★☆☆</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★★☆☆☆</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★☆☆☆☆</label>
+        </div>
+
+        <!-- Why same name? -->
+        <p class="note"><em>All rating radios share the same name so only one can be selected.</em></p>
+
+        <!-- Date Installed -->
+        <label for="installDate">Date of Installation *</label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <!-- Useful Features -->
+        <label>Useful Features</label>
+        <div class="features">
+            <label><input type="checkbox" id="feature1" name="features" value="durable"> Durable</label>
+            <label><input type="checkbox" id="feature2" name="features" value="easy"> Easy to Use</label>
+            <label><input type="checkbox" id="feature3" name="features" value="fast"> Fast Performance</label>
+            <label><input type="checkbox" id="feature4" name="features" value="compact"> Compact Size</label>
+        </div>
+
+        <!-- Written Review -->
+        <label for="writtenReview">Written Review</label>
+        <textarea id="writtenReview" name="writtenReview" rows="4" placeholder="Write your review here..."></textarea>
+
+        <!-- User Name -->
+        <label for="userName">Your Name</label>
+        <input type="text" id="userName" name="userName" placeholder="Optional">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review" class="submit-btn">
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 | Product Review Form Assignment</p>
+</footer>
+
+</body>
+</html>
