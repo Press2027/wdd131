@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical POS - Request Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="large-styl.css">
+</head>
+<body>
+    <header>
+        <h1>PRESMED POINT OF SALE</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="functions.html">Key Functions</a></li>
+                <li><a href="contact.html">Request Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-intro">
+            <h2>Request a Demo</h2>
+        </section>
+
+        <div id="form-response-message" aria-live="polite"></div>
+
+        <form id="demo-request-form" method="POST" action="#">
+            <fieldset>
+                <legend>Your Practice Information</legend>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="practiceType">Type of Practice:</label>
+                <select id="practiceType" name="practiceType" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="Clinic">Small Clinic</option>
+                    <option value="Dental">Dental Office</option>
+                    <option value="Specialty">Specialty Practice</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Demo Options</legend>
+
+                <p>Are you interested in Card Payment integration?</p>
+                <label>
+                    <input type="radio" name="paymentInterest" value="Yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="paymentInterest" value="No"> No
+                </label>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+
+   <footer>
+    <p>&copy; 2025 Preston | Kenya | Med-POS Solutions</p>
+    <p><a href="references.html">Sources & References</a></p>
+    <p id="last-modified"></p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
